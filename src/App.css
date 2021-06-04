@@ -1,38 +1,63 @@
-.App {
+.layer p {
+  color: #fff;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-style {
+  font-weight: bold;
+  font-size: 65px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.btn a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-1 {
+  width: 200px;
+  height: 50px;
+  background-color: #ea522f;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 13px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.btn-2 {
+  width: 200px;
+  height: 50px;
+  background-color: #2088df;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 13px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 360px) {
+  .p-style {
+    font-weight: bold;
+    font-size: 45px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.bg-image {
+  height: 100vh;
+  background-size: contain;
+  background-image: linear-gradient(
+      rgba(44, 59, 80, 0.7),
+      rgba(44, 59, 80, 0.7)
+    ),
+    url("./assets/bags.jpg");
+  background-attachment: fixed;
+}
+
+.div-margin div{
+  margin-right: 10px;
+  margin-top: 10px;
 }
