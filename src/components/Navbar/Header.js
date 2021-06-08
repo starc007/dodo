@@ -13,9 +13,9 @@ const Header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
         <Nav className="">
-          <Nav.Link href="#home">Overview</Nav.Link>
+          <Nav.Link href="/">Overview</Nav.Link>
           <Nav.Link href="#link">Features</Nav.Link>
-          <Nav.Link href="#link">Pricing</Nav.Link>
+          <Nav.Link href="/pricing">Pricing</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

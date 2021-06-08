@@ -3,7 +3,7 @@ import { FiDownload, FiSettings, FiShoppingCart } from "react-icons/fi";
 import { FaBullhorn, FaHandshake, FaShoppingBag } from "react-icons/fa";
 import { BiGitCompare } from "react-icons/bi";
 import { IoCashOutline } from "react-icons/io5";
-import { ImCross } from "react-icons/im";
+
 import { GiChart, GiStoneBlock, GiCutDiamond } from "react-icons/gi";
 import { MdComputer, MdLocalOffer } from "react-icons/md";
 import {
@@ -11,7 +11,7 @@ import {
   AiFillCreditCard,
   AiOutlineShoppingCart,
   AiOutlineHeart,
-  AiOutlineCheck,
+  
 } from "react-icons/ai";
 import Header from "../components/Navbar/Header";
 import Slider from "../components/Slider/Slider";
@@ -25,11 +25,12 @@ import Store from "../assets/STORE-PRESENTATION-1.png";
 import panel from "../assets/GLOBAL-BUSINESS-IN-YOUR-HAND.png";
 import TabComponent from "../components/TabComponent";
 import Footer from "../components/Footer";
+import PricingComponent from "../components/PricingComponent";
 
 const Home = () => {
   return (
     <div>
-      <div>
+      <div className="h-16">
         <Header />
       </div>
       <div className="bg-image flex items-center justify-center">
@@ -405,156 +406,7 @@ const Home = () => {
         <p className="md:text-5xl text-4xl font-semibold text-center text-black">
           Affordable <span style={{ color: "#F5250A" }}>Pricing </span>
         </p>
-        <div className="flex justify-evenly flex-wrap">
-          <div
-            className="w-11/12 md:w-1/3 shadow-xl rounded div-margin-3"
-            style={{ height: "110vh" }}
-          >
-            <div className=" pt-4 text-center">
-              <p className="text-3xl">Regular</p>
-              <p className="text-6xl font-semibold">$59</p>
-            </div>
-            <div className="flex justify-center">
-              <hr className="w-4/5" />
-            </div>
-            <div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  LIFETIME UPDATE
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  PERMITTED FOR 1 DOMAIN
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  6 MONTHS TECHNICAL SUPPORT
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  ZENDESK SUPPORT (1 BUSINESS DAY)
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  FOR PERSONAL PROJECT
-                </label>
-              </div>
-              <div className="flex justify-center items-center">
-                <ImCross size={15} color="red" />
-                <label className="text-gray-600 pt-2 text-base font-medium ml-2">
-                  FOR COMMERCIAL PRJOECT
-                </label>
-              </div>
-              <div className="flex justify-center items-center">
-                <ImCross size={15} color="red" />
-                <label className="text-gray-600 pt-2 text-base font-medium ml-2">
-                  1 HR LIVE SUPPORT (ANYDESK)
-                </label>
-              </div>
-              <div className="flex justify-center items-center">
-                <ImCross size={15} color="red" />
-                <label className="text-gray-600 pt-2 text-base font-medium ml-2">
-                  FREE INSTALLATION (CPANEL)
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <hr className="w-4/5" />
-              </div>
-              <div className="flex justify-center">
-                <a
-                  href="#"
-                  className="w-4/5 h-12 text-center border-2 border-blue-600 rounded-3xl text-blue-600 p-2 text-lg hover:bg-blue-600 hover:text-white"
-                  style={{ textDecoration: "none" }}
-                >
-                  Buy Regular License
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            className="w-11/12 md:w-1/3  shadow-xl div-margin-3  rounded"
-            style={{ height: "110vh" }}
-          >
-            <div className=" pt-4 text-center">
-              <p className="text-3xl">Extended</p>
-              <p className="text-6xl font-semibold">$525</p>
-            </div>
-            <div className="flex justify-center">
-              <hr className="w-4/5" />
-            </div>
-            <div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  LIFETIME UPDATE
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  PERMITTED FOR 1 DOMAIN
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  6 MONTHS TECHNICAL SUPPORT
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  ZENDESK SUPPORT (1 BUSINESS DAY)
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base font-medium ml-2">
-                  FOR PERSONAL PROJECT
-                </label>
-              </div>
-              <div className="flex justify-center items-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base pt-2 font-medium ml-2">
-                  FOR COMMERCIAL PRJOECT
-                </label>
-              </div>
-              <div className="flex justify-center items-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base pt-2 font-medium ml-2">
-                  1 HR LIVE SUPPORT (ANYDESK)
-                </label>
-              </div>
-              <div className="flex justify-center items-center">
-                <AiOutlineCheck size={22} color="green" />
-                <label className="text-gray-600 text-base pt-2 font-medium ml-2">
-                  FREE INSTALLATION (CPANEL)
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <hr className="w-4/5" />
-              </div>
-              <div className="flex justify-center">
-                <a
-                  href="#"
-                  className="w-4/5 h-12 text-center rounded-3xl text-blue-600 p-2 text-lg bg-blue-600 text-white"
-                  style={{ textDecoration: "none" }}
-                >
-                  Buy Extended License
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <PricingComponent />
       </div>
       <div>
         <div className="bg-image-3 flex items-center justify-center">

@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <div
       style={{ backgroundColor: "#12121B" }}
-      className="h-24 w-full flex justify-between items-center px-4"
+      className="h-auto w-full flex justify-between items-center p-4 flex-wrap"
     >
-      <div className="flex text-white  footer-div">
+      <div className="flex text-white flex-wrap  footer-div">
         {/* <label>© 2020 - 2021 DOT COM LABS LLP |</label> */}
         <a
           href="#"
@@ -29,7 +29,7 @@ const Footer = () => {
           Customization Terms & Policy
         </a>
       </div>
-      <div className="flex ">
+      <div className="flex py-2">
         <a href="#">
           <img src={facebook} width="30" />
         </a>
