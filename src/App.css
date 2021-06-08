@@ -47,7 +47,7 @@
   }
 }
 .bg-image {
-  height: 100vh;
+  height: 90vh;
   background-size: contain;
   background-image: linear-gradient(
       rgba(44, 59, 80, 0.7),
@@ -67,6 +67,17 @@
     url("./assets/bags.jpg");
   background-attachment: fixed;
 }
+.bg-image-3 {
+  height: 90vh;
+  width: 100%;
+  background-size: contain;
+  background-image: linear-gradient(
+      rgba(44, 59, 80, 0.9),
+      rgba(44, 59, 80, 0.9)
+    ),
+    url("./assets/bags.jpg");
+  background-attachment: fixed;
+}
 
 .div-margin div {
   margin-right: 10px;
@@ -81,4 +92,15 @@
 .div-margin-2 div {
   margin-right: 20px;
   margin-top: 20px;
+}
+
+.div-margin-3 div{
+  margin-top: 10px;
+}
+
+.footer-div a{
+  text-decoration: none;
+  /* color: #fff; */
+  padding-right: 5px;
+  font-size: 16px;
 }

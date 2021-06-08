@@ -3,6 +3,7 @@ import { FiDownload, FiSettings, FiShoppingCart } from "react-icons/fi";
 import { FaBullhorn, FaHandshake, FaShoppingBag } from "react-icons/fa";
 import { BiGitCompare } from "react-icons/bi";
 import { IoCashOutline } from "react-icons/io5";
+import { ImCross } from "react-icons/im";
 import { GiChart, GiStoneBlock, GiCutDiamond } from "react-icons/gi";
 import { MdComputer, MdLocalOffer } from "react-icons/md";
 import {
@@ -10,6 +11,7 @@ import {
   AiFillCreditCard,
   AiOutlineShoppingCart,
   AiOutlineHeart,
+  AiOutlineCheck,
 } from "react-icons/ai";
 import Header from "../components/Navbar/Header";
 import Slider from "../components/Slider/Slider";
@@ -22,6 +24,7 @@ import Group from "../assets/Group-7995.png";
 import Store from "../assets/STORE-PRESENTATION-1.png";
 import panel from "../assets/GLOBAL-BUSINESS-IN-YOUR-HAND.png";
 import TabComponent from "../components/TabComponent";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -31,39 +34,39 @@ const Home = () => {
       </div>
       <div className="bg-image flex items-center justify-center">
         <div className="layer">
-          <p style={{ fontSize: 22, marginTop: 20 }}>MOST POWERFUL</p>
-
-          <p className="p-style">Active eCommerce CMS</p>
-
-          <p style={{ fontSize: 22 }}>
-            A powerful platform to make you an eCommerce entrepreneur
+          <p style={{ fontSize: 28, marginTop: 20 }}>
+            Build The Most Powerful{" "}
           </p>
+
+          <p className="p-style">eCommerce Platform with DODO</p>
+
           <div className="btn">
             <a href="#" className="btn-1 hover:bg-white hover:text-black">
-              Browse Frontend
+              Try Customer End
             </a>
             <a href="#" className="btn-2 hover:bg-white hover:text-black">
-              Browse Admin
+              Try Admin End
             </a>
           </div>
         </div>
       </div>
 
-      <div className="h-auto bg-white">
+      <div className="h-auto bg-white py-4">
         <p className="md:text-5xl text-4xl font-bold text-center text-black">
-          Watch Promo
+          Glimpses of Dodo
         </p>
         <p className="text-center text-gray-400 text-lg">
-          Complete system for your eCommerce business
+          The Most User Friendly eCommerce Platform
         </p>
       </div>
       <div className="h-auto my-5">
         <div className="flex justify-center">
           <img src={easy} />
         </div>
-        <p className="md:text-5xl text-3xl font-semibold text-center text-black">
-          How <span style={{ color: "#F5250A" }}>Active eCommerce cms </span>
-          works?
+        <p className="md:text-7xl text-4xl font-semibold text-center text-black">
+          How to
+          <span style={{ color: "#F5250A" }}>Start an eCommerce Business </span>
+          with Dodo?
         </p>
         <div className="flex justify-center flex-wrap div-margin">
           <div className="md:w-1/5 w-full h-52 rounded bg-blue-100 p-2">
@@ -71,23 +74,21 @@ const Home = () => {
               <FiDownload size={40} className="text-gray-700" />
             </div>
             <div className="flex justify-center pt-2">
-              <p className="font-semibold text-2xl text-gray-700">01</p>
+              <p className="font-semibold text-2xl text-gray-700">Get</p>
             </div>
 
-            <p className="text-center pt-1 text-gray-600">
-              Download and Install Active eCommerce CMS
-            </p>
+            <p className="text-center pt-1 text-gray-600">Install Dodo</p>
           </div>
           <div className="md:w-1/5 w-full h-52 rounded bg-red-100 p-2">
             <div className="flex justify-center">
               <FiSettings size={40} className="text-gray-700" />
             </div>
             <div className="flex justify-center">
-              <p className="font-semibold text-2xl text-gray-700 pt-2">02</p>
+              <p className="font-semibold text-2xl text-gray-700 pt-2">Set</p>
             </div>
 
             <p className="text-center pt-1 text-gray-600">
-              Setup your platform with eCommerce options
+              Setup your eCommerce in the easiest manner possible
             </p>
           </div>
           <div className="md:w-1/5 w-full h-52 rounded bg-green-100 p-2">
@@ -95,11 +96,11 @@ const Home = () => {
               <FaBullhorn size={38} className="text-gray-700" />
             </div>
             <div className="flex justify-center">
-              <p className="font-semibold text-2xl pt-2 text-gray-700">03</p>
+              <p className="font-semibold text-2xl pt-2 text-gray-700">Go</p>
             </div>
 
             <p className="text-center text-gray-600 pt-1">
-              Welcome your sellers to join with your platform
+              Onboard your sellers on Platform and You are ready
             </p>
           </div>
           <div className="md:w-1/5 w-full h-52 rounded bg-red-100 p-2">
@@ -107,11 +108,11 @@ const Home = () => {
               <GiChart size={40} className="text-gray-700" />
             </div>
             <div className="flex justify-center">
-              <p className="font-semibold text-2xl pt-2 text-gray-700">04</p>
+              <p className="font-semibold text-2xl pt-2 text-gray-700">Enjoy</p>
             </div>
 
             <p className="text-center pt-1 text-gray-600">
-              Start earning from sales commission
+              Enjoy Your Commission Income
             </p>
           </div>
         </div>
@@ -121,10 +122,11 @@ const Home = () => {
           <img src={stunning} />
         </div>
         <p className="md:text-5xl text-4xl font-semibold text-center text-black">
-          <span style={{ color: "#F5250A" }}>Frontend </span> Design
+          <span style={{ color: "#F5250A" }}>Design </span> That No One Can Miss
         </p>
         <p className="text-center text-gray-400 text-lg">
-          Unique shop design to make your business a true eCommerce platform
+          The most simple yet alluring shop design to make your customers stay
+          and shop with ease
         </p>
         <div>
           <Slider />
@@ -132,11 +134,11 @@ const Home = () => {
       </div>
       <div className="h-auto my-5">
         <p className="md:text-5xl text-4xl font-bold text-center text-black">
-          Amazing features
+          Fantastic features
         </p>
         <p className="text-center text-gray-600 text-lg">
-          Standard Multivendor system with well-decorated frontend & exclusive
-          features.
+          A Convertible eCommerce Platform with the most fantabulous features
+          ever.
         </p>
         <div className="flex flex-wrap justify-center div-margin">
           <div className="md:w-1/4 w-full h-52 rounded bg-blue-100 p-2">
@@ -150,7 +152,7 @@ const Home = () => {
             </div>
 
             <p className="text-center pt-1 text-sm text-gray-600">
-              Developed with most powerful PHP framework Laravel
+              Developed in Laravel to give you an amazing experience
             </p>
           </div>
           <div className="md:w-1/4 w-full h-52 rounded bg-red-100 p-2">
@@ -159,12 +161,12 @@ const Home = () => {
             </div>
             <div className="flex justify-center pt-2">
               <p className="font-medium text-lg text-gray-700">
-                100% Responsive design
+                The Perfectly Responsive Design
               </p>
             </div>
 
             <p className="text-center pt-1 text-sm text-gray-600">
-              The entire layout is available to 100% fit for any sizes of screen
+              The entire layout is designed to fit every screen size
             </p>
           </div>
           <div className="md:w-1/4 w-full h-52 rounded bg-purple-100 p-2">
@@ -187,13 +189,13 @@ const Home = () => {
             </div>
             <div className="flex justify-center pt-2">
               <p className="font-medium text-lg text-gray-700">
-                Basic eCommerce
+                Single Vendor eCommerce
               </p>
             </div>
 
             <p className="text-center pt-1 text-sm text-gray-600">
-              By a click, you can turn the total system from Multi vendor system
-              to B-C format
+              The system can be converted from Multivendor to Single Vendor and
+              vice-versa in a click
             </p>
           </div>
           <div className="md:w-1/4 w-full h-52 rounded bg-yellow-100 p-2">
@@ -202,13 +204,13 @@ const Home = () => {
             </div>
             <div className="flex justify-center pt-2">
               <p className="font-medium text-lg text-gray-700">
-                Available Multi-currency
+                Borderless System
               </p>
             </div>
 
             <p className="text-center pt-1 text-sm text-gray-600">
-              Multi-currency option makes this system border-less eCommerce
-              platform
+              Dodo supports multiple currencies to function across International
+              Borders
             </p>
           </div>
           <div className="md:w-1/4 w-full h-52 rounded bg-indigo-100 p-2">
@@ -222,7 +224,7 @@ const Home = () => {
             </div>
 
             <p className="text-center pt-1 text-sm text-gray-600">
-              Take payments by Multiple International payment Gateways
+              Dodo supports several international payment gateways
             </p>
           </div>
         </div>
@@ -403,7 +405,179 @@ const Home = () => {
         <p className="md:text-5xl text-4xl font-semibold text-center text-black">
           Affordable <span style={{ color: "#F5250A" }}>Pricing </span>
         </p>
-        
+        <div className="flex justify-evenly flex-wrap">
+          <div
+            className="w-11/12 md:w-1/3 shadow-xl rounded div-margin-3"
+            style={{ height: "110vh" }}
+          >
+            <div className=" pt-4 text-center">
+              <p className="text-3xl">Regular</p>
+              <p className="text-6xl font-semibold">$59</p>
+            </div>
+            <div className="flex justify-center">
+              <hr className="w-4/5" />
+            </div>
+            <div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  LIFETIME UPDATE
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  PERMITTED FOR 1 DOMAIN
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  6 MONTHS TECHNICAL SUPPORT
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  ZENDESK SUPPORT (1 BUSINESS DAY)
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  FOR PERSONAL PROJECT
+                </label>
+              </div>
+              <div className="flex justify-center items-center">
+                <ImCross size={15} color="red" />
+                <label className="text-gray-600 pt-2 text-base font-medium ml-2">
+                  FOR COMMERCIAL PRJOECT
+                </label>
+              </div>
+              <div className="flex justify-center items-center">
+                <ImCross size={15} color="red" />
+                <label className="text-gray-600 pt-2 text-base font-medium ml-2">
+                  1 HR LIVE SUPPORT (ANYDESK)
+                </label>
+              </div>
+              <div className="flex justify-center items-center">
+                <ImCross size={15} color="red" />
+                <label className="text-gray-600 pt-2 text-base font-medium ml-2">
+                  FREE INSTALLATION (CPANEL)
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <hr className="w-4/5" />
+              </div>
+              <div className="flex justify-center">
+                <a
+                  href="#"
+                  className="w-4/5 h-12 text-center border-2 border-blue-600 rounded-3xl text-blue-600 p-2 text-lg hover:bg-blue-600 hover:text-white"
+                  style={{ textDecoration: "none" }}
+                >
+                  Buy Regular License
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="w-11/12 md:w-1/3  shadow-xl div-margin-3  rounded"
+            style={{ height: "110vh" }}
+          >
+            <div className=" pt-4 text-center">
+              <p className="text-3xl">Extended</p>
+              <p className="text-6xl font-semibold">$525</p>
+            </div>
+            <div className="flex justify-center">
+              <hr className="w-4/5" />
+            </div>
+            <div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  LIFETIME UPDATE
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  PERMITTED FOR 1 DOMAIN
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  6 MONTHS TECHNICAL SUPPORT
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  ZENDESK SUPPORT (1 BUSINESS DAY)
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base font-medium ml-2">
+                  FOR PERSONAL PROJECT
+                </label>
+              </div>
+              <div className="flex justify-center items-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base pt-2 font-medium ml-2">
+                  FOR COMMERCIAL PRJOECT
+                </label>
+              </div>
+              <div className="flex justify-center items-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base pt-2 font-medium ml-2">
+                  1 HR LIVE SUPPORT (ANYDESK)
+                </label>
+              </div>
+              <div className="flex justify-center items-center">
+                <AiOutlineCheck size={22} color="green" />
+                <label className="text-gray-600 text-base pt-2 font-medium ml-2">
+                  FREE INSTALLATION (CPANEL)
+                </label>
+              </div>
+              <div className="flex justify-center">
+                <hr className="w-4/5" />
+              </div>
+              <div className="flex justify-center">
+                <a
+                  href="#"
+                  className="w-4/5 h-12 text-center rounded-3xl text-blue-600 p-2 text-lg bg-blue-600 text-white"
+                  style={{ textDecoration: "none" }}
+                >
+                  Buy Extended License
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="bg-image-3 flex items-center justify-center">
+          <div className="w-full md:w-2/5 h-2/3 bg-white rounded-lg text-center p-5">
+            <p className="md:text-4xl text-3xl font-semibold ">
+              Ready to start an eCommerce Business?
+            </p>
+            <p className="text-gray-500 font-medium ">
+              Top-notch support, free lifetime updates, and premium exclusive
+              features are coming soon!
+            </p>
+            <button
+              // href="#"
+
+              className="rounded px-2 h-16 p-3 bg-red-500 text-white text-center mt-4 hover:bg-red-700"
+            >
+              Download Your Copy Now | $59
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
