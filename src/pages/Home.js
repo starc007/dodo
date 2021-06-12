@@ -69,9 +69,9 @@ const Home = () => {
           <span style={{ color: "#F28C0E" }}>Start an eCommerce Business </span>
           with Dodo?
         </p>
-        <div className="flex justify-center flex-wrap div-margin">
-          <div className="md:w-1/5 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
+        <div className="flex justify-center flex-wrap">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+            <div className="flex justify-center pt-3">
               <FiDownload size={40} className="text-gray-700" />
             </div>
             <div className="flex justify-center pt-2">
@@ -80,8 +80,8 @@ const Home = () => {
 
             <p className="text-center pt-1 text-gray-600">Install Dodo</p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+            <div className="flex justify-center pt-3">
               <FiSettings size={40} className="text-gray-700" />
             </div>
             <div className="flex justify-center">
@@ -92,8 +92,8 @@ const Home = () => {
               Setup your eCommerce in the easiest manner possible
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+            <div className="flex justify-center pt-3">
               <FaBullhorn size={38} className="text-gray-700" />
             </div>
             <div className="flex justify-center">
@@ -104,8 +104,8 @@ const Home = () => {
               Onboard your sellers on Platform and You are ready
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+            <div className="flex justify-center pt-3">
               <GiChart size={40} className="text-gray-700" />
             </div>
             <div className="flex justify-center">
@@ -239,7 +239,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="h-auto  p-3" >
+      <div className="h-auto  p-3">
         <div className="flex justify-center">
           <img src={efficient} />
         </div>
@@ -357,9 +357,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div
-        className="h-auto flex flex-wrap p-5"
-      >
+      <div className="h-auto flex flex-wrap p-5">
         <div className="w-full md:w-1/2 self-center p-3">
           <p
             className="md:text-6xl text-5xl font-semibold"
