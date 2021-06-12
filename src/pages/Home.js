@@ -33,9 +33,9 @@ const Home = () => {
       <div className="h-16">
         <Header />
       </div>
-      <div className="bg-image flex items-center justify-center">
+      <div className="bg-image flex items-center ">
         <div className="layer">
-          <p style={{ fontSize: 28, marginTop: 20 }}>
+          <p style={{ fontSize: 28, marginTop: 10 }}>
             Build The Most Powerful{" "}
           </p>
 

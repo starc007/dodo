@@ -1,7 +1,7 @@
 
 .layer p {
   color: #fff;
-  text-align: center;
+  margin-left: 4rem;
 }
 .p-style {
   font-weight: bold;
@@ -11,15 +11,16 @@
 @media only screen and (min-width: 360px) {
   .p-style {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
   }
 
 }
 
 .btn {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
+  margin-left: 3rem;
 }
 
 .btn a {
@@ -31,7 +32,7 @@
   height: 50px;
   background-color: #ea522f;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 5px;
   text-align: center;
   padding: 13px;
   margin-right: 5px;
@@ -43,7 +44,7 @@
   height: 50px;
   background-color: #2088df;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 5px;
   text-align: center;
   padding: 13px;
   margin-top: 10px;
