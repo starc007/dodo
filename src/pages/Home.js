@@ -407,7 +407,7 @@ const Home = () => {
       </div>
       <div>
         <div className="bg-image-3 flex items-center justify-center">
-          <div className="w-full md:w-2/5 h-2/3 bg-white rounded-lg text-center p-5">
+          <div className="w-full md:w-2/5 h-2/3 bg-white rounded-lg text-center p-5 mx-4">
             <p className="md:text-4xl text-3xl font-semibold ">
               Ready to start an eCommerce Business?
             </p>
@@ -418,7 +418,7 @@ const Home = () => {
             <button
               // href="#"
 
-              className="rounded px-2 h-16 p-3 bg-red-500 text-white text-center mt-4 hover:bg-red-700"
+              className="rounded px-2 h-16 text-sm md:text-base p-3 bg-red-500 text-white text-center mt-4 hover:bg-red-700"
             >
               Download Your Copy Now | $59
             </button>
