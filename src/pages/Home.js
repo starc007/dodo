@@ -66,11 +66,11 @@ const Home = () => {
         </div>
         <p className="md:text-7xl text-4xl font-semibold text-center text-black">
           How to
-          <span style={{ color: "#F5250A" }}>Start an eCommerce Business </span>
+          <span style={{ color: "#F28C0E" }}>Start an eCommerce Business </span>
           with Dodo?
         </p>
         <div className="flex justify-center flex-wrap div-margin">
-          <div className="md:w-1/5 w-full h-52 rounded bg-blue-100 p-2">
+          <div className="md:w-1/5 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <FiDownload size={40} className="text-gray-700" />
             </div>
@@ -80,7 +80,7 @@ const Home = () => {
 
             <p className="text-center pt-1 text-gray-600">Install Dodo</p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded bg-red-100 p-2">
+          <div className="md:w-1/5 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <FiSettings size={40} className="text-gray-700" />
             </div>
@@ -92,7 +92,7 @@ const Home = () => {
               Setup your eCommerce in the easiest manner possible
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded bg-green-100 p-2">
+          <div className="md:w-1/5 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <FaBullhorn size={38} className="text-gray-700" />
             </div>
@@ -104,7 +104,7 @@ const Home = () => {
               Onboard your sellers on Platform and You are ready
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded bg-red-100 p-2">
+          <div className="md:w-1/5 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <GiChart size={40} className="text-gray-700" />
             </div>
@@ -123,7 +123,7 @@ const Home = () => {
           <img src={stunning} />
         </div>
         <p className="md:text-5xl text-4xl font-semibold text-center text-black">
-          <span style={{ color: "#F5250A" }}>Design </span> That No One Can Miss
+          <span style={{ color: "#F28C0E" }}>Design </span> That No One Can Miss
         </p>
         <p className="text-center text-gray-400 text-lg">
           The most simple yet alluring shop design to make your customers stay
@@ -142,7 +142,7 @@ const Home = () => {
           ever.
         </p>
         <div className="flex flex-wrap justify-center div-margin">
-          <div className="md:w-1/4 w-full h-52 rounded bg-blue-100 p-2">
+          <div className="md:w-1/4 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <GiStoneBlock size={40} className="text-gray-700" />
             </div>
@@ -156,7 +156,7 @@ const Home = () => {
               Developed in Laravel to give you an amazing experience
             </p>
           </div>
-          <div className="md:w-1/4 w-full h-52 rounded bg-red-100 p-2">
+          <div className="md:w-1/4 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <MdComputer size={40} className="text-gray-700" />
             </div>
@@ -170,7 +170,7 @@ const Home = () => {
               The entire layout is designed to fit every screen size
             </p>
           </div>
-          <div className="md:w-1/4 w-full h-52 rounded bg-purple-100 p-2">
+          <div className="md:w-1/4 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <FaHandshake size={40} className="text-gray-700" />
             </div>
@@ -184,7 +184,7 @@ const Home = () => {
               Complete system for making your Multivendor system
             </p>
           </div>
-          <div className="md:w-1/4 w-full h-52 rounded bg-green-100 p-2">
+          <div className="md:w-1/4 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <FiShoppingCart size={40} className="text-gray-700" />
             </div>
@@ -199,7 +199,7 @@ const Home = () => {
               vice-versa in a click
             </p>
           </div>
-          <div className="md:w-1/4 w-full h-52 rounded bg-yellow-100 p-2">
+          <div className="md:w-1/4 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <AiOutlineDollar size={40} className="text-gray-700" />
             </div>
@@ -214,7 +214,7 @@ const Home = () => {
               Borders
             </p>
           </div>
-          <div className="md:w-1/4 w-full h-52 rounded bg-indigo-100 p-2">
+          <div className="md:w-1/4 w-full h-52 rounded  p-2">
             <div className="flex justify-center">
               <AiFillCreditCard size={40} className="text-gray-700" />
             </div>
@@ -239,7 +239,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="h-auto  p-3" style={{ backgroundColor: "#F8F9FB" }}>
+      <div className="h-auto  p-3" >
         <div className="flex justify-center">
           <img src={efficient} />
         </div>
@@ -253,7 +253,7 @@ const Home = () => {
           <TabComponent />
         </div>
       </div>
-      <div className="h-auto py-4 " style={{ backgroundColor: "#F9EFEC" }}>
+      <div className="h-auto w-full py-4">
         <div className="flex justify-center">
           <img src={laptop} />
         </div>
@@ -272,65 +272,65 @@ const Home = () => {
           </p>
         </div>
         <div className="flex justify-center mt-4 div-margin-2 flex-wrap ml-2">
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <AiOutlineShoppingCart size={45} color="#FC876C" />
+              <AiOutlineShoppingCart size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Products Variant
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <GiCutDiamond size={45} color="#FC876C" />
+              <GiCutDiamond size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Featured Product
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <AiOutlineHeart size={45} color="#FC876C" />
+              <AiOutlineHeart size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Product Wishlist
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <MdLocalOffer size={45} color="#FC876C" />
+              <MdLocalOffer size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Products Flash Deal
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <MdLocalOffer size={45} color="#FC876C" />
+              <MdLocalOffer size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Today’s Deal
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <BiGitCompare size={45} color="#FC876C" />
+              <BiGitCompare size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Products Compare
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <FaShoppingBag size={45} color="#FC876C" />
+              <FaShoppingBag size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Discounted Product
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-44 shadow-lg rounded-lg bg-white">
+          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
             <div className="flex justify-center my-4">
-              <IoCashOutline size={45} color="#FC876C" />
+              <IoCashOutline size={45} color="#F28C0E" />
             </div>
             <p className="text-center text-gray-700 text-2xl font-medium">
               Free/Flat Shipping
@@ -359,7 +359,6 @@ const Home = () => {
       </div>
       <div
         className="h-auto flex flex-wrap p-5"
-        style={{ backgroundColor: "#F7F9FB" }}
       >
         <div className="w-full md:w-1/2 self-center p-3">
           <p
@@ -404,7 +403,7 @@ const Home = () => {
           <img src={extremely} />
         </div>
         <p className="md:text-5xl text-4xl font-semibold text-center text-black">
-          Affordable <span style={{ color: "#F5250A" }}>Pricing </span>
+          Affordable <span style={{ color: "#F28C0E" }}>Pricing </span>
         </p>
         <PricingComponent />
       </div>
