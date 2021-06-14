@@ -84,8 +84,9 @@
 }
 
 .div-margin div {
-  margin-right: 10px;
+  margin-right: 30px;
   margin-top: 10px;
+  margin-left: 30px;
 }
 
 .nav-pills .nav-link.active,
