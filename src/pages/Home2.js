@@ -10,15 +10,60 @@ import img6 from "../assets/images/features_6.png";
 import img7 from "../assets/images/demo1.png";
 
 const Home2 = () => {
+  const words = ["Powerful", "Alluring", "Responsive"];
+  let i = 0;
+  let counter;
+  function typeNow() {
+    let word = words[i].split("");
+    var loopTyping = function () {
+      if (word.length > 0) {
+        document.getElementById("text").innerHTML += word.shift();
+      } else {
+        deleteNow();
+        return false;
+      }
+      counter = setTimeout(loopTyping, 130);
+    };
+    loopTyping();
+  }
+
+  function deleteNow() {
+    let word = words[i].split("");
+    var loopDeleting = function () {
+      if (word.length > 0) {
+        word.pop();
+        document.getElementById("text").innerHTML = word.join("");
+      } else {
+        if (words.length > i + 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        typeNow();
+        return false;
+      }
+      counter = setTimeout(loopDeleting, 120);
+    };
+    loopDeleting();
+  }
+  window.onload = function () {
+    typeNow();
+  };
+
   return (
     <div>
       <div className="h-16">
         <Header />
       </div>
       <div className="bg-image flex items-center ">
+        {/* <div className="div1">
+          <p id="text"></p>
+          <p>|</p>
+        </div> */}
         <div className="layer">
           <p style={{ fontSize: 28, marginTop: 10 }}>
-            Build The Most Powerful{" "}
+            Build The Most <span id="text" className="font-bold text-4xl"></span>
+            <span className="text-red-700 text-4xl">|</span>
           </p>
 
           <p className="p-style">eCommerce Platform with DODO</p>
