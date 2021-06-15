@@ -14,6 +14,7 @@ import { FaBullhorn } from "react-icons/fa";
 import { GiChart} from "react-icons/gi";
 import TabComponent from "../components/TabComponent";
 import TabComponent2 from "../components/TabComponent2";
+import Footer from "../components/Footer";
 
 const Home2 = () => {
   const words = ["Powerful", "Alluring", "Intuitive", "Responsive"];
@@ -203,6 +204,9 @@ const Home2 = () => {
             understand in a glance.
           </p>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
