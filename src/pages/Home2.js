@@ -1,16 +1,22 @@
 import React from "react";
 import Header from "../components/Navbar/Header";
 
-import img1 from "../assets/images/features_1.png";
-import img2 from "../assets/images/features_2.png";
-import img3 from "../assets/images/features_3.png";
-import img4 from "../assets/images/features_4.png";
-import img5 from "../assets/images/features_5.png";
-import img6 from "../assets/images/features_6.png";
+
 import img7 from "../assets/images/demo1.png";
+import Group from "../assets/Group-7995.png";
+import Store from "../assets/STORE-PRESENTATION-1.png";
+import panel from "../assets/GLOBAL-BUSINESS-IN-YOUR-HAND.png";
+import payment from "../assets/payment.jpg";
+
+
+import { FiDownload, FiSettings } from "react-icons/fi";
+import { FaBullhorn } from "react-icons/fa";
+import { GiChart} from "react-icons/gi";
+import TabComponent from "../components/TabComponent";
+import TabComponent2 from "../components/TabComponent2";
 
 const Home2 = () => {
-  const words = ["Powerful", "Alluring", "Responsive"];
+  const words = ["Powerful", "Alluring", "Intuitive", "Responsive"];
   let i = 0;
   let counter;
   function typeNow() {
@@ -56,13 +62,10 @@ const Home2 = () => {
         <Header />
       </div>
       <div className="bg-image flex items-center ">
-        {/* <div className="div1">
-          <p id="text"></p>
-          <p>|</p>
-        </div> */}
         <div className="layer">
           <p style={{ fontSize: 28, marginTop: 10 }}>
-            Build The Most <span id="text" className="font-bold text-4xl"></span>
+            Build The Most{" "}
+            <span id="text" className="font-bold text-4xl"></span>
             <span className="text-red-700 text-4xl">|</span>
           </p>
 
@@ -78,150 +81,127 @@ const Home2 = () => {
           </div>
         </div>
       </div>
-      <div className="my-5 py-5 h-auto p-4">
-        <p className="text-center text-xl text-blue-700">WHY CHOOSE DODO</p>
-        <p className="text-center text-5xl text-gray-700 font-semibold">
-          A complete website building toolkit save your time by using SaasLand
+
+      <div className="h-auto bg-white py-4">
+        <p className="md:text-5xl text-4xl font-bold text-center text-gray-700">
+          Glimpses of Dodo
         </p>
-        <div className="flex flex-wrap mt-5 justify-center div-margin">
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center">
-              <img src={img1} />
+        <p className="text-center text-gray-400 text-lg">
+          The Most User Friendly eCommerce Platform
+        </p>
+      </div>
+      <div
+        className="h-auto my-5 py-5 p-4"
+        style={{ backgroundColor: "#F9FAFE" }}
+      >
+        <p className="md:text-6xl text-4xl font-semibold text-center text-gray-700">
+          How to
+          <span style={{ color: "#F28C0E" }}>Start an eCommerce Business </span>
+          <br />
+          with Dodo?
+        </p>
+        <div className="flex justify-center flex-wrap">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
+            <div className="flex justify-center pt-3">
+              <FiDownload size={40} className="text-gray-700" />
             </div>
-            <p className="font-semibold text-xl text-center pt-2">
-              Visual Site Builder
-            </p>
-            <p className="text-gray-600 text-center">
-              SaasLand comes with visual website builder “Elementor”. You can
-              edit any part of your webpages using the intuitive front end
-              builder.
-            </p>
-          </div>
+            <div className="flex justify-center pt-2">
+              <p className="font-semibold text-2xl text-gray-700">Get</p>
+            </div>
 
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center">
-              <img src={img2} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-2">
-              One-click Demo Import
-            </p>
-            <p className="text-gray-600 text-center">
-              The one-click demo importer gives you the ability to import any
-              demo you see in the live preview. Just a matter of a few seconds!
-            </p>
+            <p className="text-center pt-1 text-gray-600">Install Dodo</p>
           </div>
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
+            <div className="flex justify-center pt-3">
+              <FiSettings size={40} className="text-gray-700" />
+            </div>
+            <div className="flex justify-center">
+              <p className="font-semibold text-2xl text-gray-700 pt-2">Set</p>
+            </div>
 
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center">
-              <img src={img3} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-2">
-              250+ Element Blocks
-            </p>
-            <p className="text-gray-600 text-center">
-              We have assembled a huge collection of element blocks. Now you can
-              choose from over 250 templates to create stunning layouts.
+            <p className="text-center pt-1 text-gray-600">
+              Setup your eCommerce in the easiest manner possible
             </p>
           </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center">
-              <img src={img4} />
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
+            <div className="flex justify-center pt-3">
+              <FaBullhorn size={38} className="text-gray-700" />
             </div>
-            <p className="font-semibold text-xl text-center pt-2">
-              No Coding Required
-            </p>
-            <p className="text-gray-600 text-center">
-              Setup a fully functional, awesome website without needing to code
-              a single line - SaasLand is that easy to configure.
+            <div className="flex justify-center">
+              <p className="font-semibold text-2xl pt-2 text-gray-700">Go</p>
+            </div>
+
+            <p className="text-center text-gray-600 pt-1">
+              Onboard your sellers on Platform and You are ready
             </p>
           </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center">
-              <img src={img5} />
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
+            <div className="flex justify-center pt-3">
+              <GiChart size={40} className="text-gray-700" />
             </div>
-            <p className="font-semibold text-xl text-center pt-2">
-              Build Shop - Sell Online
-            </p>
-            <p className="text-gray-600 text-center">
-              WooCommerce is setup and fully integrated. Now build your online
-              shop, sell your products, grow your business.
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center">
-              <img src={img6} />
+            <div className="flex justify-center">
+              <p className="font-semibold text-2xl pt-2 text-gray-700">Enjoy</p>
             </div>
-            <p className="font-semibold text-xl text-center pt-2">
-              Support That Pleases
-            </p>
-            <p className="text-gray-600 text-center">
-              Already our customers are hugely satisfied with customer support
-              we are conveying - you will be impressed, too!
+
+            <p className="text-center pt-1 text-gray-600">
+              Enjoy Your Commission Income
             </p>
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "#F9FAFE" }} className="my-5 py-5 h-auto">
-        <p className="text-center text-8xl font-bold text-blue-700">38</p>
-        <p className="text-center text-4xl font-semibold text-gray-700">
-          Stunning Demos
+
+      <div className="my-5 py-5 h-auto">
+        <p className="text-center text-6xl font-bold">
+          The Best-In-Class Interface
         </p>
-        <p className="text-gray-500 text-xl text-center p-4">
-          All home pages, inner pages and elements are included with the
-          purchase. Easily import the demos and pages with the one click demo
-          import. If you want to create new pages the elements and blocks have
-          got your back. Mix and blend elements from different demos as per your
-          preference and create awesome websites with Saasland!
+        <p className="text-gray-500 text-xl text-center">
+          Dodo gives you the Design that No One Can Miss.
         </p>
-        <div className="flex justify-center flex-wrap mt-5 div-margin">
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center shadow-xl">
-              <img src={img7} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-4">
-              Visual Site Builder
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center shadow-xl">
-              <img src={img7} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-4">
-              Visual Site Builder
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center shadow-xl">
-              <img src={img7} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-4">
-              Visual Site Builder
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center shadow-xl">
-              <img src={img7} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-4">
-              Visual Site Builder
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center shadow-xl">
-              <img src={img7} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-4">
-              Visual Site Builder
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-auto py-4  mt-4">
-            <div className="flex justify-center items-center shadow-xl">
-              <img src={img7} />
-            </div>
-            <p className="font-semibold text-xl text-center pt-4">
-              Visual Site Builder
-            </p>
-          </div>
+        <TabComponent />
+      </div>
+      <div className="my-5 py-5 h-auto" style={{ backgroundColor: "#F9FAFE" }}>
+        <p className="text-center text-6xl font-bold text-gray-700">
+          Why Choose Dodo?
+        </p>
+        <p className="text-gray-500 text-xl text-center">
+          Dodo provides you a complete end to end Convertible eCommerce Platform
+          with the most fantabulous features ever.
+        </p>
+        <TabComponent2 />
+      </div>
+
+      <div className="h-auto flex flex-wrap p-5">
+        <div className="w-full md:w-1/2 self-center p-3">
+          <p className="md:text-5xl text-4xl font-semibold text-gray-700">
+            Multiple International Payment Gateways To Accept Payments
+          </p>
+          <p className="text-gray-500">
+            Accepting online payments easily is the most important requirement
+            of nyt eCommerce platform. Therefore, we have enabled Dodo to
+            support several payment gateways thereby enabling you to accept
+            payments the way you want.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2">
+          <img src={payment} />
+        </div>
+      </div>
+      <div className="h-auto flex flex-wrap p-5">
+        <div className="w-full md:w-1/2">
+          <img src={panel} />
+        </div>
+        <div className="w-full md:w-1/2 self-center p-4">
+          <p className="md:text-5xl text-4xl font-semibold text-gray-700">
+            Global Business in Your Hands
+          </p>
+          <p className="text-gray-500">
+            Now you need not be bound to your office. Our omnipotent Admin Panel
+            allows you to control your Borderless business from anywhere in the
+            world let it be your home or your vacation destination. The
+            dashboard gives you all the available information w.r.t. Customers,
+            Orders and Merchants in a graphical manner making it easy to
+            understand in a glance.
+          </p>
         </div>
       </div>
     </div>
