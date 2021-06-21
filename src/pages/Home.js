@@ -1,4 +1,9 @@
 import React from "react";
+import Header from "../components/Navbar/Header";
+
+import panel from "../assets/GLOBAL-BUSINESS-IN-YOUR-HAND.png";
+import payment from "../assets/payment.jpg";
+
 import { FiDownload, FiSettings, FiShoppingCart } from "react-icons/fi";
 import { FaBullhorn, FaHandshake, FaShoppingBag } from "react-icons/fa";
 import { BiGitCompare } from "react-icons/bi";
@@ -11,33 +16,64 @@ import {
   AiFillCreditCard,
   AiOutlineShoppingCart,
   AiOutlineHeart,
-  
 } from "react-icons/ai";
-import Header from "../components/Navbar/Header";
-import Slider from "../components/Slider/Slider";
-import easy from "../assets/easiest.jpg";
-import stunning from "../assets/stunning.jpg";
-import efficient from "../assets/efficient.jpg";
-import extremely from "../assets/extremely.jpg";
-import laptop from "../assets/laptop.png";
-import Group from "../assets/Group-7995.png";
-import Store from "../assets/STORE-PRESENTATION-1.png";
-import panel from "../assets/GLOBAL-BUSINESS-IN-YOUR-HAND.png";
 import TabComponent from "../components/TabComponent";
-import Footer from "../components/Footer";
-import PricingComponent from "../components/PricingComponent";
 
-const Home = () => {
+import Footer from "../components/Footer";
+import FeatureComponent from "../components/FeatureComponent";
+
+const Home2 = () => {
+  const words = ["Powerful", "Alluring", "Intuitive", "Responsive"];
+  let i = 0;
+  let counter;
+  function typeNow() {
+    let word = words[i].split("");
+    var loopTyping = function () {
+      if (word.length > 0) {
+        document.getElementById("text").innerHTML += word.shift();
+      } else {
+        deleteNow();
+        return false;
+      }
+      counter = setTimeout(loopTyping, 130);
+    };
+    loopTyping();
+  }
+
+  function deleteNow() {
+    let word = words[i].split("");
+    var loopDeleting = function () {
+      if (word.length > 0) {
+        word.pop();
+        document.getElementById("text").innerHTML = word.join("");
+      } else {
+        if (words.length > i + 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        typeNow();
+        return false;
+      }
+      counter = setTimeout(loopDeleting, 120);
+    };
+    loopDeleting();
+  }
+  window.onload = function () {
+    typeNow();
+  };
+
   return (
     <div>
       <div className="h-16">
         <Header />
       </div>
       <div className="bg-image flex items-center ">
-        
         <div className="layer">
           <p style={{ fontSize: 28, marginTop: 10 }}>
-            Build The Most Powerful{" "}
+            Build The Most{" "}
+            <span id="text" className="font-bold text-4xl"></span>
+            <span className="text-red-700 text-4xl">|</span>
           </p>
 
           <p className="p-style">eCommerce Platform with DODO</p>
@@ -54,24 +90,155 @@ const Home = () => {
       </div>
 
       <div className="h-auto bg-white py-4">
-        <p className="md:text-5xl text-4xl font-bold text-center text-black">
+        <p className="md:text-5xl text-4xl font-bold text-center text-gray-700">
           Glimpses of Dodo
         </p>
         <p className="text-center text-gray-400 text-lg">
           The Most User Friendly eCommerce Platform
         </p>
       </div>
-      <div className="h-auto my-5">
-        <div className="flex justify-center">
-          <img src={easy} />
+
+      <div className="my-5 py-5 h-auto">
+        <p className="text-center text-6xl font-bold">
+          The Best-In-Class Interface
+        </p>
+        <p className="text-gray-500 text-xl text-center">
+          Dodo gives you the Design that No One Can Miss.
+        </p>
+        <TabComponent />
+      </div>
+      <div className=" my-5 py-5 h-auto" style={{ backgroundColor: "#F9FAFE" }}>
+        <p className="text-center text-6xl font-bold text-gray-700">
+          Why Choose Dodo?
+        </p>
+        <p className="text-gray-500 text-xl text-center">
+          Dodo provides you a complete end to end Convertible eCommerce Platform
+          with the most fantabulous features ever.
+        </p>
+        <div className="flex flex-wrap justify-center div-margin">
+          <FeatureComponent
+            title="Laravel based PHP script"
+            icon={<GiStoneBlock size={40} color="#5E2CED" />}
+            desc="Developed in Laravel to give you an amazing experience"
+          />
+          <FeatureComponent
+            title="The Perfectly Responsive Design"
+            icon={<MdComputer size={40} color="#5E2CED" />}
+            desc="The entire layout is designed to fit every screen size"
+          />
+          <FeatureComponent
+            title="Multivendor system"
+            icon={<FaHandshake size={40} color="#5E2CED" />}
+            desc="A feature rich Multivendor System"
+          />
+          <FeatureComponent
+            title="Single Vendor eCommerce"
+            icon={<FiShoppingCart size={40} color="#5E2CED" />}
+            desc=" The system can be converted from Multivendor to Single Vendor and
+              vice-versa in a click"
+          />
+          <FeatureComponent
+            title="Borderless System"
+            icon={<AiOutlineDollar size={40} color="#5E2CED" />}
+            desc="Dodo supports multiple currencies to function across International
+              Borders"
+          />
+          <FeatureComponent
+            title="Payment Gateways"
+            icon={<AiFillCreditCard size={40} color="#5E2CED" />}
+            desc="Dodo supports various payment Gateways to enable you accept online payments"
+          />
+          <FeatureComponent
+            title="Products Variant"
+            icon={<AiOutlineShoppingCart size={40} color="#5E2CED" />}
+            desc="Multiple Variants in Terms of Colour, Model, Size etc. can be added to ensure improved user experience"
+          />
+          <FeatureComponent
+            title="Product Wishlist"
+            icon={<AiOutlineHeart size={40} color="#5E2CED" />}
+            desc="Wishlist not just allows customers to remember product but also gives you an insight of your customer’s liking and disliking"
+          />
+          <FeatureComponent
+            title="Products Flash Deal"
+            icon={<MdLocalOffer size={40} color="#5E2CED" />}
+            desc="Flash Deal is an indispensable part of any eCommerce as only this can create the most required buzz in the market"
+          />
+          <FeatureComponent
+            title="Today’s Deal"
+            icon={<MdLocalOffer size={40} color="#5E2CED" />}
+            desc="Another feature to Surprise your customers every now and then and keep them curious about next offer"
+          />
+          <FeatureComponent
+            title="Compare Products"
+            icon={<BiGitCompare size={40} color="#5E2CED" />}
+            desc="eCommerce’s only limitation is that there is no one to guide the customer what to buy when he is confused between similar looking products. Compare Products feature allow them to compare product features and thereby leading them to purchase"
+          />
+          <FeatureComponent
+            title="Free/Flat Shipping"
+            icon={<IoCashOutline size={40} color="#5E2CED" />}
+            desc="Whether you want to ship items for free or you wanna charge Shipping Fee, the choice is only yours"
+          />
         </div>
-        <p className="md:text-7xl text-4xl font-semibold text-center text-black">
+        <div className="flex justify-center my-4">
+          <a
+            style={{ textDecoration: "none" }}
+            href="/cms-features"
+            className="w-52 h-12 text-center flex items-center justify-center rounded-3xl  bg-blue-600 text-white shadow-2xl"
+          >
+            View All Features
+          </a>
+        </div>
+      </div>
+
+      <div className="h-auto flex flex-wrap p-5">
+        <div className="w-full md:w-1/2 self-center p-3">
+          <p className="md:text-5xl text-4xl font-semibold text-gray-700">
+            Multiple International Payment Gateways To Accept Payments
+          </p>
+          <p className="text-gray-500">
+            Accepting online payments easily is the most important requirement
+            of nyt eCommerce platform. Therefore, we have enabled Dodo to
+            support several payment gateways thereby enabling you to accept
+            payments the way you want.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2">
+          <img src={payment} />
+        </div>
+      </div>
+      <div
+        className="h-auto flex flex-wrap p-5"
+        style={{ backgroundColor: "#F9FAFE" }}
+      >
+        <div className="w-full md:w-1/2">
+          <img src={panel} />
+        </div>
+        <div className="w-full md:w-1/2 self-center p-4">
+          <p className="md:text-5xl text-4xl font-semibold text-gray-700">
+            Global Business in Your Hands
+          </p>
+          <p className="text-gray-500">
+            Now you need not be bound to your office. Our omnipotent Admin Panel
+            allows you to control your Borderless business from anywhere in the
+            world let it be your home or your vacation destination. The
+            dashboard gives you all the available information w.r.t. Customers,
+            Orders and Merchants in a graphical manner making it easy to
+            understand in a glance.
+          </p>
+        </div>
+      </div>
+      <div className="h-auto py-5 p-4">
+        <p className="md:text-6xl text-4xl font-semibold text-center text-gray-700">
           How to
-          <span style={{ color: "#F28C0E" }}>Start an eCommerce Business </span>
+          <span style={{ color: "#5E2CED" }}>
+            {" "}
+            Start an eCommerce Business{" "}
+          </span>
+          <br />
           with Dodo?
         </p>
         <div className="flex justify-center flex-wrap">
-          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
             <div className="flex justify-center pt-3">
               <FiDownload size={40} className="text-gray-700" />
             </div>
@@ -81,7 +248,7 @@ const Home = () => {
 
             <p className="text-center pt-1 text-gray-600">Install Dodo</p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
             <div className="flex justify-center pt-3">
               <FiSettings size={40} className="text-gray-700" />
             </div>
@@ -93,7 +260,7 @@ const Home = () => {
               Setup your eCommerce in the easiest manner possible
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
             <div className="flex justify-center pt-3">
               <FaBullhorn size={38} className="text-gray-700" />
             </div>
@@ -105,7 +272,7 @@ const Home = () => {
               Onboard your sellers on Platform and You are ready
             </p>
           </div>
-          <div className="md:w-1/5 w-full h-52 rounded shadow-lg border p-2">
+          <div className="md:w-1/5 w-full h-52 rounded shadow-lg mt-2 mx-2 p-2">
             <div className="flex justify-center pt-3">
               <GiChart size={40} className="text-gray-700" />
             </div>
@@ -119,313 +286,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="h-auto my-5">
-        <div className="flex justify-center">
-          <img src={stunning} />
-        </div>
-        <p className="md:text-5xl text-4xl font-semibold text-center text-black">
-          <span style={{ color: "#F28C0E" }}>Design </span> That No One Can Miss
-        </p>
-        <p className="text-center text-gray-400 text-lg">
-          The most simple yet alluring shop design to make your customers stay
-          and shop with ease
-        </p>
-        <div>
-          <Slider />
-        </div>
-      </div>
-      <div className="h-auto my-5">
-        <p className="md:text-5xl text-4xl font-bold text-center text-black">
-          Fantastic features
-        </p>
-        <p className="text-center text-gray-600 text-lg">
-          A Convertible eCommerce Platform with the most fantabulous features
-          ever.
-        </p>
-        <div className="flex flex-wrap justify-center div-margin">
-          <div className="md:w-1/4 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
-              <GiStoneBlock size={40} className="text-gray-700" />
-            </div>
-            <div className="flex justify-center pt-2">
-              <p className="text-lg font-medium text-gray-700">
-                Laravel based PHP script
-              </p>
-            </div>
-
-            <p className="text-center pt-1 text-sm text-gray-600">
-              Developed in Laravel to give you an amazing experience
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
-              <MdComputer size={40} className="text-gray-700" />
-            </div>
-            <div className="flex justify-center pt-2">
-              <p className="font-medium text-lg text-gray-700">
-                The Perfectly Responsive Design
-              </p>
-            </div>
-
-            <p className="text-center pt-1 text-sm text-gray-600">
-              The entire layout is designed to fit every screen size
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
-              <FaHandshake size={40} className="text-gray-700" />
-            </div>
-            <div className="flex justify-center pt-2">
-              <p className="font-medium text-lg text-gray-700">
-                Multivendor system
-              </p>
-            </div>
-
-            <p className="text-center pt-1 text-sm text-gray-600">
-              Complete system for making your Multivendor system
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
-              <FiShoppingCart size={40} className="text-gray-700" />
-            </div>
-            <div className="flex justify-center pt-2">
-              <p className="font-medium text-lg text-gray-700">
-                Single Vendor eCommerce
-              </p>
-            </div>
-
-            <p className="text-center pt-1 text-sm text-gray-600">
-              The system can be converted from Multivendor to Single Vendor and
-              vice-versa in a click
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
-              <AiOutlineDollar size={40} className="text-gray-700" />
-            </div>
-            <div className="flex justify-center pt-2">
-              <p className="font-medium text-lg text-gray-700">
-                Borderless System
-              </p>
-            </div>
-
-            <p className="text-center pt-1 text-sm text-gray-600">
-              Dodo supports multiple currencies to function across International
-              Borders
-            </p>
-          </div>
-          <div className="md:w-1/4 w-full h-52 rounded  p-2">
-            <div className="flex justify-center">
-              <AiFillCreditCard size={40} className="text-gray-700" />
-            </div>
-            <div className="flex justify-center pt-2">
-              <p className="font-medium text-lg text-gray-700">
-                Multiple Payment Gateways
-              </p>
-            </div>
-
-            <p className="text-center pt-1 text-sm text-gray-600">
-              Dodo supports several international payment gateways
-            </p>
-          </div>
-        </div>
-        <div className="flex justify-center my-4">
-          <a
-            style={{ textDecoration: "none" }}
-            href="#"
-            className="w-52 h-12 text-center flex items-center justify-center rounded-3xl  bg-blue-600 text-white shadow-2xl"
-          >
-            View All Features
-          </a>
-        </div>
-      </div>
-      <div className="h-auto  p-3">
-        <div className="flex justify-center">
-          <img src={efficient} />
-        </div>
-        <p
-          className="md:text-6xl text-5xl font-semibold text-center"
-          style={{ color: "#E64004" }}
-        >
-          User <span style={{ color: "#E66804" }}> Panels </span>
-        </p>
-        <div>
-          <TabComponent />
-        </div>
-      </div>
-      <div className="h-auto w-full py-4">
-        <div className="flex justify-center">
-          <img src={laptop} />
-        </div>
-        <div className="mt-4">
-          <p className="md:text-6xl text-5xl font-semibold text-center">
-            Easy Product Posting
-          </p>
-          <p
-            className="text-gray-500 text-center"
-            style={{ wordWrap: "break-word" }}
-          >
-            An efficient and thoughtfully streamlined product posting option for
-            admins
-            <br /> and sellers makes it possible to provide an industry-leading
-            standard.
-          </p>
-        </div>
-        <div className="flex justify-center mt-4 div-margin-2 flex-wrap ml-2">
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <AiOutlineShoppingCart size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Products Variant
-            </p>
-          </div>
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <GiCutDiamond size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Featured Product
-            </p>
-          </div>
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <AiOutlineHeart size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Product Wishlist
-            </p>
-          </div>
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <MdLocalOffer size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Products Flash Deal
-            </p>
-          </div>
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <MdLocalOffer size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Today’s Deal
-            </p>
-          </div>
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <BiGitCompare size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Products Compare
-            </p>
-          </div>
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <FaShoppingBag size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Discounted Product
-            </p>
-          </div>
-          <div className="md:w-1/5 w-full h-44 shadow-sm rounded-lg ">
-            <div className="flex justify-center my-4">
-              <IoCashOutline size={45} color="#F28C0E" />
-            </div>
-            <p className="text-center text-gray-700 text-2xl font-medium">
-              Free/Flat Shipping
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="h-auto flex flex-wrap p-5">
-        <div className="w-full md:w-1/2">
-          <img src={Group} />
-        </div>
-        <div className="w-full md:w-1/2 self-center p-3">
-          <p
-            className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#E64004" }}
-          >
-            Multiple{" "}
-            <span style={{ color: "#E66804" }}> Payment Gateways </span>
-          </p>
-          <p className="text-gray-600">
-            Active eCommerce CMS comes with 8 types of payment options. You can
-            take payments from your customers according to your suitable
-            gateways.
-          </p>
-        </div>
-      </div>
-      <div className="h-auto flex flex-wrap p-5">
-        <div className="w-full md:w-1/2 self-center p-3">
-          <p
-            className="md:text-6xl text-5xl font-semibold"
-            style={{ color: "#E64004" }}
-          >
-            Stunning Seller
-            <span style={{ color: "#E66804" }}> Store Presentation </span>
-          </p>
-          <p className="text-gray-600">
-            All sellers have their shop setting to present his/her store
-            branding. Store page comes with promotional banners, featured
-            products, sellers reviews, social links, new products.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2">
-          <img src={Store} />
-        </div>
-      </div>
-      <div className="h-auto flex flex-wrap p-5">
-        <div className="w-full md:w-1/2">
-          <img src={panel} />
-        </div>
-        <div className="w-full md:w-1/2 self-center p-3">
-          <p
-            className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#E64004" }}
-          >
-            Global Business
-            <span style={{ color: "#E66804" }}> is in your HAND! </span>
-          </p>
-          <p className="text-gray-600">
-            Admin panel of Active eCommerce CMS is a control room of your
-            business. You can manage your whole eCommerce business including
-            customers, products, orders, sellers, shops. Is has everything you
-            need to control your shop business.
-          </p>
-        </div>
-      </div>
-      <div className="h-auto py-4">
-        <div className="flex justify-center">
-          <img src={extremely} />
-        </div>
-        <p className="md:text-5xl text-4xl font-semibold text-center text-black">
-          Affordable <span style={{ color: "#F28C0E" }}>Pricing </span>
-        </p>
-        <PricingComponent />
-      </div>
-      <div>
-        <div className="bg-image-3 flex items-center justify-center">
-          <div className="w-full md:w-2/5 h-2/3 bg-white rounded-lg text-center p-5 mx-4">
-            <p className="md:text-4xl text-3xl font-semibold ">
-              Ready to start an eCommerce Business?
-            </p>
-            <p className="text-gray-500 font-medium ">
-              Top-notch support, free lifetime updates, and premium exclusive
-              features are coming soon!
-            </p>
-            <button
-              // href="#"
-
-              className="rounded px-2 h-16 text-sm md:text-base p-3 bg-red-500 text-white text-center mt-4 hover:bg-red-700"
-            >
-              Download Your Copy Now | $59
-            </button>
-          </div>
-        </div>
-      </div>
       <div>
         <Footer />
       </div>
@@ -433,4 +293,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home2;

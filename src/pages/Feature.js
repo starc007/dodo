@@ -22,201 +22,204 @@ const Feature = () => {
         <Header />
       </div>
 
-      <div className="h-auto py-4 p-5 bg-yellow-50">
+      <div className="h-auto py-4 my-5">
         <p className="text-5xl text-center font-semibold">
-          <span style={{ color: "#F28C0E" }}>General</span> Features
+          <span style={{ color: "#5E2CED" }}>General</span> Features
         </p>
-        <div className="flex justify-center div-margin-4 flex-wrap">
+        <div className="flex justify-center flex-wrap">
           <BoxComponent
             title=" 100% Responsive Design"
-            icon={<AiOutlineMobile size={38} color="#F28C0E" />}
+            icon={<AiOutlineMobile size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Laravel based PHP script"
-            icon={<AiTwotoneBuild size={38} color="#F28C0E" />}
+            icon={<AiTwotoneBuild size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="B-B-C eCommerce"
-            icon={<BsArrowRepeat size={38} color="#F28C0E" />}
+            icon={<BsArrowRepeat size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="B-C eCommerce"
-            icon={<FaHandshake size={38} color="#F28C0E" />}
+            icon={<FaHandshake size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Multi-Vendor System"
-            icon={<TiGroup size={38} color="#F28C0E" />}
+            icon={<TiGroup size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Dynamic Homepage"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
         </div>
       </div>
-      <div className="h-auto py-4 p-5 bg-yellow-100">
+      <div className="h-auto p-4 w-full" style={{ backgroundColor: "#F9FAFE" }}>
         <p className="text-5xl text-center font-semibold">
-          <span style={{ color: "#F28C0E" }}>Standard</span> eCommerce
+          <span style={{ color: "#5E2CED" }}>Standard</span> eCommerce
         </p>
-        <div className="flex justify-center div-margin-4 flex-wrap">
+        <div className="flex justify-center flex-wrap">
           <BoxComponent
             title="Smart Cart System"
-            icon={<AiOutlineMobile size={38} color="#F28C0E" />}
+            icon={<AiOutlineMobile size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Compare Product"
-            icon={<AiTwotoneBuild size={38} color="#F28C0E" />}
+            icon={<AiTwotoneBuild size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Wishlist"
-            icon={<BsArrowRepeat size={38} color="#F28C0E" />}
+            icon={<BsArrowRepeat size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Featured Product"
-            icon={<FaHandshake size={38} color="#F28C0E" />}
+            icon={<FaHandshake size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Today’s Deal"
-            icon={<TiGroup size={38} color="#F28C0E" />}
+            icon={<TiGroup size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Flash Deal"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Discount"
-            icon={<AiOutlineMobile size={38} color="#F28C0E" />}
+            icon={<AiOutlineMobile size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Shipping Cost"
-            icon={<AiTwotoneBuild size={38} color="#F28C0E" />}
+            icon={<AiTwotoneBuild size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Product Tax"
-            icon={<BsArrowRepeat size={38} color="#F28C0E" />}
+            icon={<BsArrowRepeat size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Variant Based Stock"
-            icon={<FaHandshake size={38} color="#F28C0E" />}
+            icon={<FaHandshake size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Variants Product Price"
-            icon={<TiGroup size={38} color="#F28C0E" />}
+            icon={<TiGroup size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Social Media Sharing"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Smart Checkout"
-            icon={<AiOutlineMobile size={38} color="#F28C0E" />}
+            icon={<AiOutlineMobile size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Suggestive Search"
-            icon={<AiTwotoneBuild size={38} color="#F28C0E" />}
+            icon={<AiTwotoneBuild size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Customer Review"
-            icon={<BsArrowRepeat size={38} color="#F28C0E" />}
+            icon={<BsArrowRepeat size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Product Video"
-            icon={<FaHandshake size={38} color="#F28C0E" />}
+            icon={<FaHandshake size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Pickup Point"
-            icon={<TiGroup size={38} color="#F28C0E" />}
+            icon={<TiGroup size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Coupon"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
         </div>
       </div>
       <div className="h-auto py-4">
         <p className="text-4xl md:text-5xl px-2 text-center font-semibold">
-          <span style={{ color: "#F28C0E" }}>Social Media</span>
+          <span style={{ color: "#5E2CED" }}>Social Media</span>
           Login & Sharing
         </p>
         <div className="flex justify-center div-margin-4 flex-wrap">
           <BoxComponent
             title="Facebook Login"
-            icon={<FaHandshake size={38} color="#F28C0E" />}
+            icon={<FaHandshake size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Google Login"
-            icon={<TiGroup size={38} color="#F28C0E" />}
+            icon={<TiGroup size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Twitter Login"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
         </div>
       </div>
-      <div className="h-auto py-5 bg-yellow-50">
-        <p className="text-4xl md:text-5xl px-2 text-center font-semibold">
+      <div className="h-auto p-4" style={{ backgroundColor: "#F9FAFE" }}>
+        <p className="text-3xl md:text-5xl text-center font-semibold">
           Multiple
-          <span style={{ color: "#F28C0E" }}>International Payment</span>
+          <span style={{ color: "#5E2CED" }}>International Payment</span>
           Gateways
         </p>
         <div className="flex justify-center div-margin-4 flex-wrap">
           <BoxComponent
             title="PayPal payment"
-            icon={<FaHandshake size={38} color="#F28C0E" />}
+            icon={<FaHandshake size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Stripe payment"
-            icon={<TiGroup size={38} color="#F28C0E" />}
+            icon={<TiGroup size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Razorpay payment"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Instamojo payment"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Paystack payment"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Voguepay payment"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Cash on delivery"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
         </div>
       </div>
       <div className="h-auto py-4">
         <p className="text-4xl md:text-5xl px-2 text-center font-semibold">
-          <span style={{ color: "#F28C0E" }}>Shipping</span>
+          <span style={{ color: "#5E2CED" }}>Shipping</span>
           Option
         </p>
         <div className="flex justify-center div-margin-4 flex-wrap">
           <BoxComponent
             title="Free Shipping"
-            icon={<FaHandshake size={38} color="#F28C0E" />}
+            icon={<FaHandshake size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Pickup Point"
-            icon={<TiGroup size={38} color="#F28C0E" />}
+            icon={<TiGroup size={38} color="#5E2CED" />}
           />
           <BoxComponent
             title="Flat Rate"
-            icon={<BsCodeSlash size={38} color="#F28C0E" />}
+            icon={<BsCodeSlash size={38} color="#5E2CED" />}
           />
         </div>
       </div>
-      <div className="h-auto flex justify-around flex-wrap p-5 my-4">
+      <div
+        className="h-auto flex justify-around flex-wrap p-5 my-4"
+        style={{ backgroundColor: "#F9FAFE" }}
+      >
         <div className="w-full md:w-2/5">
           <img src={img1} />
         </div>
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             Laravel Based PHP Script
           </p>
@@ -251,7 +254,7 @@ const Feature = () => {
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             Responsive Design
           </p>
@@ -280,14 +283,17 @@ const Feature = () => {
           <img src={img2} />
         </div>
       </div>
-      <div className="h-auto flex flex-wrap justify-around p-5 my-4">
+      <div
+        className="h-auto flex flex-wrap justify-around p-5 my-4"
+        style={{ backgroundColor: "#F9FAFE" }}
+      >
         <div className="w-full md:w-2/5">
           <img src={img3} />
         </div>
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             B-B-C eCommerce Model
           </p>
@@ -316,7 +322,7 @@ const Feature = () => {
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             B-C eCommerce System
           </p>
@@ -344,14 +350,17 @@ const Feature = () => {
           <img src={img4} />
         </div>
       </div>
-      <div className="h-auto flex justify-around flex-wrap p-5 my-4">
+      <div
+        className="h-auto flex justify-around flex-wrap p-5 my-4"
+        style={{ backgroundColor: "#F9FAFE" }}
+      >
         <div className="w-full md:w-2/5">
           <img src={img5} />
         </div>
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             Payment Options
           </p>
@@ -381,7 +390,7 @@ const Feature = () => {
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             Dynamic Homepage
           </p>
@@ -410,14 +419,17 @@ const Feature = () => {
           <img src={img6} />
         </div>
       </div>
-      <div className="h-auto flex justify-around flex-wrap p-5 my-4">
+      <div
+        className="h-auto flex justify-around flex-wrap p-5 my-4"
+        style={{ backgroundColor: "#F9FAFE" }}
+      >
         <div className="w-full md:w-2/5">
           <img src={img7} />
         </div>
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             Multiple Options
           </p>
@@ -445,7 +457,7 @@ const Feature = () => {
         <div className="w-full md:w-2/5 self-center p-3">
           <p
             className="md:text-5xl text-4xl font-semibold"
-            style={{ color: "#F28C0E" }}
+            style={{ color: "#5E2CED" }}
           >
             Social Media Options
           </p>
