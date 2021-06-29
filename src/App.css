@@ -1,5 +1,5 @@
 .layer p {
-  color: #fff;
+  color: #212121;
   margin-left: 4rem;
 }
 .p-style {
@@ -49,13 +49,9 @@
 }
 
 .bg-image {
-  height: 70vh;
-  background-size: contain;
-  background-image: linear-gradient(
-      rgba(44, 59, 80, 0.7),
-      rgba(44, 59, 80, 0.7)
-    ),
-    url("./assets/bags.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-image: url("./assets/iconsandbanners/Home\ Banner.jpg");
   background-attachment: fixed;
 }
 .bg-image-2 {
@@ -101,7 +97,6 @@
   margin-top: 10px;
 }
 
-
 .footer-div a {
   text-decoration: none;
   /* color: #fff; */
@@ -115,7 +110,6 @@
 .a-rm a {
   text-decoration: none;
 }
-
 
 .layer span:last-of-type {
   animation: type 0.33s infinite;

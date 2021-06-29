@@ -22,6 +22,19 @@ import TabComponent from "../components/TabComponent";
 import Footer from "../components/Footer";
 import FeatureComponent from "../components/FeatureComponent";
 
+import img1 from "../assets/iconsandbanners/01.png"
+import img2 from "../assets/iconsandbanners/02.png"
+import img3 from "../assets/iconsandbanners/03.png"
+import img4 from "../assets/iconsandbanners/04.png"
+import img5 from "../assets/iconsandbanners/05.png"
+import img6 from "../assets/iconsandbanners/06.png"
+import img7 from "../assets/iconsandbanners/07.png"
+import img8 from "../assets/iconsandbanners/08.png"
+import img9 from "../assets/iconsandbanners/09.png"
+import img10 from "../assets/iconsandbanners/10.png"
+import img11 from "../assets/iconsandbanners/11.png"
+import img12 from "../assets/iconsandbanners/12.png"
+
 const Home2 = () => {
   const words = ["Powerful", "Alluring", "Intuitive", "Responsive"];
   let i = 0;
@@ -70,9 +83,13 @@ const Home2 = () => {
       </div>
       <div className="bg-image flex items-center ">
         <div className="layer">
-          <p style={{ fontSize: 28, marginTop: 10 }}>
+          <p style={{ fontSize: 30, marginTop: 10 }}>
             Build The Most{" "}
-            <span id="text" className="font-bold text-4xl"></span>
+            <span
+              id="text"
+              className="font-bold text-5xl"
+              style={{ color: "#2088df" }}
+            ></span>
             <span className="text-red-700 text-4xl">|</span>
           </p>
 
@@ -89,7 +106,7 @@ const Home2 = () => {
         </div>
       </div>
 
-      <div className="h-auto bg-white py-4">
+      <div className="h-auto b py-4">
         <p className="md:text-5xl text-4xl font-bold text-center text-gray-700">
           Glimpses of Dodo
         </p>
@@ -118,64 +135,64 @@ const Home2 = () => {
         <div className="flex flex-wrap justify-center div-margin">
           <FeatureComponent
             title="Laravel based PHP script"
-            icon={<GiStoneBlock size={40} color="#5E2CED" />}
+            icon={<img src={img1} width="50" />}
             desc="Developed in Laravel to give you an amazing experience"
           />
           <FeatureComponent
             title="The Perfectly Responsive Design"
-            icon={<MdComputer size={40} color="#5E2CED" />}
+            icon={<img src={img2} width="50" />}
             desc="The entire layout is designed to fit every screen size"
           />
           <FeatureComponent
             title="Multivendor system"
-            icon={<FaHandshake size={40} color="#5E2CED" />}
+            icon={<img src={img3} width="50" />}
             desc="A feature rich Multivendor System"
           />
           <FeatureComponent
             title="Single Vendor eCommerce"
-            icon={<FiShoppingCart size={40} color="#5E2CED" />}
+            icon={<img src={img4} width="50" />}
             desc=" The system can be converted from Multivendor to Single Vendor and
               vice-versa in a click"
           />
           <FeatureComponent
             title="Borderless System"
-            icon={<AiOutlineDollar size={40} color="#5E2CED" />}
+            icon={<img src={img5} width="50" />}
             desc="Dodo supports multiple currencies to function across International
               Borders"
           />
           <FeatureComponent
             title="Payment Gateways"
-            icon={<AiFillCreditCard size={40} color="#5E2CED" />}
+            icon={<img src={img6} width="50" />}
             desc="Dodo supports various payment Gateways to enable you accept online payments"
           />
           <FeatureComponent
             title="Products Variant"
-            icon={<AiOutlineShoppingCart size={40} color="#5E2CED" />}
+            icon={<img src={img7} width="50" />}
             desc="Multiple Variants in Terms of Colour, Model, Size etc. can be added to ensure improved user experience"
           />
           <FeatureComponent
             title="Product Wishlist"
-            icon={<AiOutlineHeart size={40} color="#5E2CED" />}
+            icon={<img src={img8} width="50" />}
             desc="Wishlist not just allows customers to remember product but also gives you an insight of your customer’s liking and disliking"
           />
           <FeatureComponent
             title="Products Flash Deal"
-            icon={<MdLocalOffer size={40} color="#5E2CED" />}
+            icon={<img src={img9} width="50" />}
             desc="Flash Deal is an indispensable part of any eCommerce as only this can create the most required buzz in the market"
           />
           <FeatureComponent
             title="Today’s Deal"
-            icon={<MdLocalOffer size={40} color="#5E2CED" />}
+            icon={<img src={img10} width="50" />}
             desc="Another feature to Surprise your customers every now and then and keep them curious about next offer"
           />
           <FeatureComponent
             title="Compare Products"
-            icon={<BiGitCompare size={40} color="#5E2CED" />}
+            icon={<img src={img11} width="50" />}
             desc="eCommerce’s only limitation is that there is no one to guide the customer what to buy when he is confused between similar looking products. Compare Products feature allow them to compare product features and thereby leading them to purchase"
           />
           <FeatureComponent
             title="Free/Flat Shipping"
-            icon={<IoCashOutline size={40} color="#5E2CED" />}
+            icon={<img src={img12} width="50" />}
             desc="Whether you want to ship items for free or you wanna charge Shipping Fee, the choice is only yours"
           />
         </div>
