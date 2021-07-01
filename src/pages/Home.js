@@ -34,6 +34,8 @@ import img9 from "../assets/iconsandbanners/09.png"
 import img10 from "../assets/iconsandbanners/10.png"
 import img11 from "../assets/iconsandbanners/11.png"
 import img12 from "../assets/iconsandbanners/12.png"
+import Payment from "../assets/iconsandbanners/Payment.jpg";
+
 
 const Home2 = () => {
   const words = ["Powerful", "Alluring", "Intuitive", "Responsive"];
@@ -220,7 +222,7 @@ const Home2 = () => {
           </p>
         </div>
         <div className="w-full md:w-1/2">
-          <img src={payment} />
+          <img src={Payment} />
         </div>
       </div>
       <div
